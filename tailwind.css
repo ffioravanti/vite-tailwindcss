@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import "tailwindcss";
 
+/* diretivas */
+
 @theme {
   --font-testimonial: "DM Sans", sans-serif;
+  --color-felipe: "tomato";
+  --animate-horizontal: horizontal 1s ease-in-out infinite;
 }
+
+@keyframes horizontal {
+  0%,
+  100% {
+    transform: translateX(-20px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+@utility lalaland {
+  background-color: tomato;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@plugin '@tailwindcss/forms';
+@plugin "@tailwindcss/typography";

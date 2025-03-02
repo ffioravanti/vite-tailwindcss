@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Mode</title>
+    <link href="../../tailwind.css" rel="stylesheet" />
+  </head>
+  <body
+    class="flex min-h-screen flex-col items-center justify-center gap-10 bg-gray-100 p-4 dark:bg-gray-800"
+  >
+    <div class="max-w-sm rounded-lg bg-white p-10 shadow dark:bg-gray-700">
+      <h2
+        class="text-xl font-medium text-gray-700 transition duration-1000 hover:text-blue-300 dark:text-white"
+      >
+        🐕 Dingo, o cão feliz
+      </h2>
+      <div class="mt-5 flex gap-4">
+        <div class="size-10 animate-spin bg-red-400"></div>
+        <div class="size-10 animate-pulse bg-red-400"></div>
+        <div class="size-10 animate-ping bg-red-400"></div>
+        <div class="size-10 animate-bounce bg-red-400"></div>
+        <div class="animate-horizontal size-10 bg-red-400"></div>
+      </div>
+      <p class="mt-6 font-light text-gray-500 dark:text-white">
+        O dingo, conhecido como o cão feliz, é um animal selvagem nativo da
+        Austrália, famoso por sua agilidade e espírito livre.
+      </p>
+      <p class="mt-2 font-light text-gray-500 dark:text-white">
+        Com orelhas sempre em alerta e um sorriso que parece estampado no rosto,
+        ele vive em harmonia com a natureza, explorando vastas paisagens em
+        busca de caça.
+      </p>
+    </div>
+    <button
+      class="cursor-pointer rounded bg-white p-5 py-2 text-white dark:bg-gray-700"
+    >
+      🌓
+    </button>
+  </body>
+</html>
+
+<script>
+  const htmlEl = document.querySelector("html");
+  const buttonEl = document.querySelector("button");
+
+  const handleClick = () => {
+    htmlEl.classList.toggle("dark");
+  };
+
+  buttonEl.addEventListener("click", handleClick);
+</script>

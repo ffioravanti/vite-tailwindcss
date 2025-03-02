@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 02</title>
+    <link href="../../tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="flex min-h-screen items-center justify-center bg-gray-100 p-4">
+    <div
+      class="group w-full max-w-sm overflow-hidden rounded-lg bg-white shadow-lg"
+    >
+      <div class="relative overflow-hidden bg-black">
+        <img
+          src="../../assets/relogio_pulso.jpg"
+          alt="Relógio"
+          class="group-hover:transform-scale-105 h-auto max-h-72 w-full object-cover group-hover:scale-125 group-hover:opacity-70 group-hover:duration-300"
+        />
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-transparent"
+        >
+          <button
+            class="translate-y-5 cursor-pointer rounded-full bg-pink-300 px-4 py-1 text-white opacity-0 transition duration-500 group-hover:-translate-y-20 group-hover:opacity-100"
+          >
+            Adicione ao carrinho
+          </button>
+        </div>
+      </div>
+      <footer class="p-4">
+        <h3 class="text-xl font-semibold text-gray-800 in-hover:text-red-400">
+          Relógio Coder
+        </h3>
+        <p class="mt-2 text-lg font-bold text-gray-600">R$ 99,99</p>
+        <p class="mt-2 text-sm text-gray-500">
+          Este é um relógio muito especial que traz snippets de código
+          diretamente no seu pulso!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

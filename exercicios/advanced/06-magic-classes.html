@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subscription Plans</title>
+    <link href="../../tailwind.css" rel="stylesheet" />
+  </head>
+  <body class="min-h-screen bg-gray-100 p-4 dark:bg-slate-900">
+    <!-- divide -->
+    <div
+      class="container mx-auto flex divide-x-2 divide-slate-300 rounded-lg bg-white p-8 px-10 shadow-lg"
+    >
+      <p class="px-2 hover:cursor-pointer hover:underline">Home</p>
+      <p class="px-2 hover:cursor-pointer hover:underline">About</p>
+      <p class="px-2 hover:cursor-pointer hover:underline">Subscribe</p>
+      <p class="px-2 hover:cursor-pointer hover:underline">Login</p>
+    </div>
+
+    <!-- space -->
+    <div
+      class="mx-auto mt-20 max-w-sm space-y-6 rounded-lg bg-white p-10 shadow-lg"
+    >
+      <div class="flex flex-col">
+        <label for="">Nome</label>
+        <input class="border border-gray-200" type="text" />
+      </div>
+      <div class="flex flex-col">
+        <label for="">Email</label>
+        <input class="border border-gray-200" type="text" />
+      </div>
+      <div class="flex flex-col">
+        <label for="">Telefone</label>
+        <input class="border border-gray-200" type="text" />
+      </div>
+      <div class="flex flex-col">
+        <label for="">Apelido</label>
+        <input class="border border-gray-200" type="text" />
+      </div>
+      <button class="rounded-full bg-black p-4 py-2 text-white">
+        Submeter formulário
+      </button>
+    </div>
+
+    <!-- line-clamp -->
+    <div class="mx-auto mt-20 max-w-sm rounded-lg bg-white p-10 shadow-lg">
+      <p class="line-clamp-2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem,
+        expedita facilis ex cupiditate reprehenderit? Ipsam ut reprehenderit
+        dignissimos suscipit ipsa corrupti. Error, facere? Natus suscipit
+        obcaecati perferendis nisi quo.
+      </p>
+    </div>
+
+    <!-- truncate -->
+    <div
+      class="mx-auto mt-20 w-fit max-w-xs rounded-lg bg-white p-10 shadow-lg"
+    >
+      <p class="truncate">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem,
+        expedita facilis ex cupiditate reprehenderit?
+      </p>
+    </div>
+
+    <!-- sr-only - (accessibility purposes)-->
+    <div
+      class="sr-only mx-auto mt-20 w-fit max-w-xs rounded-lg bg-white p-10 shadow-lg"
+    >
+      <p class="truncate">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem,
+        expedita facilis ex cupiditate reprehenderit?
+      </p>
+    </div>
+
+    <!-- gradient -->
+    <div
+      class="mx-auto mt-20 w-fit max-w-xl rounded-lg bg-white bg-gradient-to-r from-slate-500 to-slate-800 p-10 text-white shadow-lg"
+    >
+      <p class="truncate">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem,
+        expedita facilis ex cupiditate reprehenderit?
+      </p>
+    </div>
+
+    <!-- linear -->
+    <div
+      class="mx-auto mt-20 w-fit max-w-xl rounded-lg bg-white bg-linear-180 from-slate-500 to-slate-800 p-10 text-white shadow-lg"
+    >
+      <p class="truncate">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorem,
+        expedita facilis ex cupiditate reprehenderit?
+      </p>
+    </div>
+  </body>
+</html>
